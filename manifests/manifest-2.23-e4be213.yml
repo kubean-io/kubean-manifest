@@ -1,15 +1,15 @@
 apiVersion: "kubean.io/v1alpha1"
 kind: "Manifest"
 metadata:
-  name: "manifest-2.23-72da838"
+  name: "manifest-2.23-e4be213"
   labels:
     kubean.io/sprayRelease: "2.23"
   annotations:
-    kubean.io/sprayTimestamp: "1700228040"
+    kubean.io/sprayTimestamp: "1702463418"
     kubean.io/sprayRelease: "2.23"
-    kubean.io/sprayCommit: "72da838"
+    kubean.io/sprayCommit: "e4be213"
 spec:
-  kubesprayVersion: "72da8385197dc9f9a5a698d111bdc7553d5c0563"
+  kubesprayVersion: "e4be213cf70e86897c4aa347334789d306dd5f71"
   kubeanVersion: ""
   docker:
     - os: "redhat-7"
@@ -89,8 +89,9 @@ spec:
         - "1.5.15"
         - "1.5.14"
     - name: "kube"
-      defaultVersion: "v1.27.7"
+      defaultVersion: "v1.27.8"
       versionRange:
+        - "v1.27.8"
         - "v1.27.7"
         - "v1.27.6"
         - "v1.27.5"
@@ -99,6 +100,7 @@ spec:
         - "v1.27.2"
         - "v1.27.1"
         - "v1.27.0"
+        - "v1.26.11"
         - "v1.26.10"
         - "v1.26.9"
         - "v1.26.8"
